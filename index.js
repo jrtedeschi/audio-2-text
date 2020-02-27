@@ -54,9 +54,9 @@ exports.audio2text = (data, context) => {
       //
       // Future version of this code should be able to detect audio file
       // format, or receive it from an external source
-      const encoding = 'FLAC';
+      const encoding = 'WAV';
       const sampleRateHertz = 44100;
-      const languageCode = 'en-US';
+      const languageCode = 'pt-BR';
 
       // Set Google Cloud Storage URI for audio file object to be written
       const uri = `gs://${audioBucketName}/${file.name}`;
